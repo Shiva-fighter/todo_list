@@ -10,7 +10,7 @@ export function Component() {
     }
   ];
   const model1 = [
-    { name: "Android" },
+    { name: "blackberry" },
     { name: "Blackphone" },
     { name: "Iphone" },
     { name: "Windows" }

@@ -1,27 +1,30 @@
 import React from "react";
 
 export function Component() {
-  const model2 = [
-    {
-      heading1: "Mobile Operating System"
-    },
-    {
-      heading1: "Mobile Manufactures"
-    }
-  ];
-  const model1 = [
-    { name: "Android, blackberry" },
-    { name: "Blackphone" },
-    { name: "Iphone" },
-    { name: "Windows" }
-  ];
-  // const head = "Mobile Operating System";
-  const head2 = "Mobile Manufactures";
+  const h1 = ["Mobile Operating System"];
+  const h2 = ["Mobile Manufactures"];
+
+  const model1 = ["Android, blackberry", "Blackphone", "Iphone", "Windows"];
+  const model2 = ["Samsung", "Apple", "Micromax", "HTC"];
   return (
     <>
-      {model1.map((value) => {
-        return <h3>{value.name}</h3>;
-      })}
+      <h1>{h1}</h1>
+      <Displaydata data={model1} />
+      <h1>{h2}</h1>
+      <Displaydata data={model2} />
+    </>
+  );
+}
+
+function Displaydata({ data }) {
+  // console.log(data);
+  return (
+    <>
+      <ul>
+        {data.map((val) => {
+          return <li>{val}</li>;
+        })}
+      </ul>
     </>
   );
 }

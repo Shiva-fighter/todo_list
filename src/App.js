@@ -1,5 +1,5 @@
-import "./styles.css"
-import { Component } from "./component"
+import "./styles.css";
+import { Component } from "./component";
 
 export default function App() {
   return (
